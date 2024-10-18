@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>Horarios FACI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header id="header" class="bg-sky-900 p-2"> 
+        <div class="flex justify-between items-center">
+            <img class="w-30 h-20" src="/proyectoFACI/assets/images/LOGO-FACI.png" alt="FACI-LOGO">
+            <h1 class="text-3xl font-medium text-white text-center w-full">Facultad de Ciencias de la Ingeniería</h1>
+        </div>
+    </header>
+    
+    <section id="main" class="flex-grow py-8">
+        <div class="inner max-w-7xl mx-auto px-4">
+            <section id="horarios" class="bg-white rounded-lg shadow-lg p-6">
+                <header class="special mb-6 text-center">
+                    <h2 class="text-3xl font-semibold text-gray-800">Horarios de Clases</h2>
+                    <p class="mt-2 text-gray-600">Consulta los horarios de las asignaturas de la Facultad de Ingeniería</p>
+                </header>
+                <div class="content schedule-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Tarjetas de horarios -->
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/ing_sistemas.pdf')">
+                        <h3 class="text-lg font-medium">Ingeniería de Sistemas</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/ing_indust.pdf')">
+                        <h3 class="text-lg font-medium">Ingeniería Industrial</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/ing_elec.pdf')">
+                        <h3 class="text-lg font-medium">Ingeniería Eléctrica</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/tec_comp.pdf')">
+                        <h3 class="text-lg font-medium">Técnica Profesional en Computación</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/tec_instrumentacion.pdf')">
+                        <h3 class="text-lg font-medium">Técnica Profesional en Instrumentación Industrial</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/tec_plantas-petroleo.pdf')">
+                        <h3 class="text-lg font-medium">Técnica Profesional en Operación de Plantas Petroquímicas</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/tecno_construccion.pdf')">
+                        <h3 class="text-lg font-medium">Tecnología en Construcción de Obras Civiles</h3>
+                    </div>
+                    <div class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" onclick="window.open('assets/pdf/tecno_control-industrial.pdf', '_blank')">
+                        <h3 class="text-lg font-medium">Tecnología en Control de Procesos Industriales</h3>
+                    </div>
+                    <a class="schedule-card cursor-pointer rounded-lg p-4 flex flex-col items-center justify-center text-center" target="_blank" href="assets/pdf/tecno_electro.pdf">
+                        <h3 class="text-lg font-medium">Tecnología en Electrónica y Telecomunicaciones</h3>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <footer id="footer" class="bg-sky-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4 flex justify-between items-center">
+                <p class="text-lg text-white font-semibold">FACI - Facultad de Ciencias de la Ingeniería</p>
+                <p class="text-sm text-white">&copy; Copyright Unitecnar 2024</p>
+            </div>
+            <ul class="flex justify-center space-x-6">
+                <li>
+                    <a href="#" class="icon fa-twitter hover:text-blue-400 transition duration-300">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-facebook hover:text-blue-600 transition duration-300">
+                        <span class="label ">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram hover:text-pink-500 transition duration-300">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-envelope-o hover:text-yellow-300 transition duration-300">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
